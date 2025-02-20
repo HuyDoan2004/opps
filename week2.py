@@ -12,14 +12,14 @@ def so_lon_thu_hai(mang):
     mang_khac_nhau.sort(reverse=True)  
     return mang_khac_nhau[1] if len(mang_khac_nhau) > 1 else None
 
-print(so_lon_thu_hai([4, 2, 6, 6, 1]))  # Output: 4
+print(so_lon_thu_hai([4, 2, 6, 6, 1]))  
 
 
 #Bài 3
 def xoa_phan_tu_trung(mang):
     return list(set(mang))
 
-print(xoa_phan_tu_trung([1, 2, 2, 3, 4, 4]))  # Output: [1, 2, 3, 4]
+print(xoa_phan_tu_trung([1, 2, 2, 3, 4, 4]))  
 
 
 
@@ -54,7 +54,7 @@ dslk = DanhSachLienKet()
 dslk.them(1)
 dslk.them(2)
 dslk.them(3)
-dslk.in_danh_sach()  # Output: 1 -> 2 -> 3 -> None
+dslk.in_danh_sach()  
 
 
 
@@ -75,7 +75,7 @@ heap = HangDoiNhoNhat()
 heap.them(5)
 heap.them(1)
 heap.them(3)
-print(heap.lay_nho_nhat())  # Output: 1
+print(heap.lay_nho_nhat())  
 
 
 
@@ -84,7 +84,7 @@ def sap_xep_heap(mang):
     heapq.heapify(mang)  
     return [heapq.heappop(mang) for _ in range(len(mang))]  
 
-print(sap_xep_heap([4, 1, 7, 3, 8, 5]))  # Output: [1, 3, 4, 5, 7, 8]
+print(sap_xep_heap([4, 1, 7, 3, 8, 5]))  
 
 
 
@@ -102,7 +102,7 @@ class NganXep:
 ngan_xep = NganXep()
 ngan_xep.them(1)
 ngan_xep.them(2)
-print(ngan_xep.lay_ra())  # Output: 2
+print(ngan_xep.lay_ra())  
 
 
 
@@ -122,7 +122,7 @@ class HangDoi:
 hd = HangDoi()
 hd.them(1)
 hd.them(2)
-print(hd.lay_ra())  # Output: 1
+print(hd.lay_ra())  
 
 
 
@@ -138,8 +138,8 @@ class BangBam:
         return self.bang.get(khoa, None)
 
 bb = BangBam()
-bb.chen("ten", "Alice")
-print(bb.lay("ten"))  # Output: Alice
+bb.chen("ten", "Huy")
+print(bb.lay("ten")) 
 
 
 
@@ -150,4 +150,4 @@ def so_xuat_hien_nhieu_nhat(mang):
     dem = Counter(mang)
     return max(dem, key=dem.get)
 
-print(so_xuat_hien_nhieu_nhat([1, 3, 3, 2, 1, 3, 4]))  # Output: 3
+print(so_xuat_hien_nhieu_nhat([1, 3, 3, 2, 1, 3, 4]))  
