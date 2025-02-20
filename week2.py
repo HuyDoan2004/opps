@@ -2,7 +2,7 @@
 def dao_nguoc_mang(mang):
     return mang[::-1]
 
-print(dao_nguoc_mang([1, 2, 3, 4]))  # Output: [4, 3, 2, 1]
+print(dao_nguoc_mang([1, 2, 3, 4]))  
 
 
 
